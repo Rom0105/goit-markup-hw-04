@@ -4,6 +4,7 @@
 	--grey: #757575;
 	--grey2: rgba(255, 255, 255, 0.6);
 	--grey3: #F5F4FA;
+	--grey4: #AFB1B8;
 	--white: #ffffff;
 	--violet: #2F303A;
 }
@@ -240,6 +241,7 @@ h2, h3 {
 .work-item:not(:last-child) {
 	margin-right: 30px;
 }
+
 /* Наша команда */
 .team {
 	max-width: 1600px;
@@ -292,6 +294,47 @@ h2, h3 {
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+}
+
+.team-lists {
+	display: flex;
+	margin-top: 16px;
+	justify-content: center;
+}
+
+.team-link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	fill: var(--grey4);
+}
+.team-link:hover,
+.team-link:focus {
+	background-color: var(--cyan);
+	fill: var(--white);
+}
+
+.team-links:not(:last-child) {
+	margin-right: 10px;
+}
+
+/* Клиенты */
+.client-list {
+	display: flex;
+}
+
+.client-link {
+	display: inline-block;
+	width: 170px;
+	height: 90px;
+	fill: var(--grey4);
+}
+.client-link:hover,
+.client-link:focus {
+	fill: var(--cyan);
 }
 
 /* Футер */
