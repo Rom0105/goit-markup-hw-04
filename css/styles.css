@@ -28,6 +28,9 @@ h2, h3 {
 
 /* Шапка */
 .header {
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px solid #ECECEC;
 }
 
@@ -113,7 +116,14 @@ h2, h3 {
 
 /* Герой */
 .hero {
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
 	background-color: var(--violet);
+	background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+	url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 	text-align: center;
 }
 
@@ -170,7 +180,29 @@ h2, h3 {
 	margin-right: 30px;
 }
 
+.text-item::before {
+	display: block;
+	content: "";
+	height: 120px;
+	background-color: var(--grey3);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.icon-antena::before {
+	background-image: url(../svg/antenna.svg);
+}
+.icon-clock::before {
+	background-image: url(../svg/clock.svg);
+}
+.icon-diagram::before {
+	background-image: url(../svg/diagram.svg);
+}
+.icon-astronaut::before {
+	background-image: url(../svg/astronaut.svg);
+}
+
 .text-title {
+	margin-top: 30px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -210,6 +242,8 @@ h2, h3 {
 }
 /* Наша команда */
 .team {
+	max-width: 1600px;
+	margin: 0 auto;
 	padding-top: 94px;
 	padding-bottom: 94px;
 	background-color: var(--grey3);
@@ -262,10 +296,21 @@ h2, h3 {
 
 /* Футер */
 .footer {
+	max-width: 1600px;
+	margin: 0 auto;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: var(--violet);
 }
+
+.container-footer {
+	display: flex;
+	align-items: baseline;
+}
+
+ .footer-items {
+	 margin-right: 70px;
+ }
 
 .footer .logo {
 	color: var(--cyan);
@@ -297,4 +342,55 @@ h2, h3 {
 	font-size: 14px;
 	line-height: 1.71 ;
 	letter-spacing: 0.03em;
+}
+
+.footer-text {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.142;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.footer-list {
+	display: flex;
+	margin-top: 20px;
+}
+
+.footer-li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer-icon {
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.footer-icon:hover,
+.footer-icon:focus {
+	background-color: var(--cyan);
+}
+
+.footer-insta {
+	background-image: url(../svg/instagram.svg);
+}
+.footer-vector {
+	background-image: url(../svg/vector.svg);
+}
+.footer-facebook {
+	background-image: url(../svg/facebook.svg);
+}
+.footer-linke {
+	background-image: url(../svg/linkedin.svg);
+}
+
+.footer-icon:not(:last-child) {
+	margin-right: 10px;
 }

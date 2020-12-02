@@ -27,6 +27,9 @@ h2 {
 
 /* Шапка */
 .header {
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px solid #ECECEC;
 }
 
@@ -208,13 +211,21 @@ h2 {
 
 /* Футер */
 .footer {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	background-color: var(--violet);
 }
 
-.footer-list {
-	padding-top: 60px;
-	padding-bottom: 60px;
+.container-footer {
+	display: flex;
+	align-items: baseline;
 }
+
+ .footer-items {
+	 margin-right: 70px;
+ }
 
 .footer .logo {
 	color: var(--cyan);
@@ -246,4 +257,55 @@ h2 {
 	font-size: 14px;
 	line-height: 1.71 ;
 	letter-spacing: 0.03em;
+}
+
+.footer-text {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.142;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.footer-list {
+	display: flex;
+	margin-top: 20px;
+}
+
+.footer-li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer-icon {
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.footer-icon:hover,
+.footer-icon:focus {
+	background-color: var(--cyan);
+}
+
+.footer-insta {
+	background-image: url(../svg/instagram.svg);
+}
+.footer-vector {
+	background-image: url(../svg/vector.svg);
+}
+.footer-facebook {
+	background-image: url(../svg/facebook.svg);
+}
+.footer-linke {
+	background-image: url(../svg/linkedin.svg);
+}
+
+.footer-icon:not(:last-child) {
+	margin-right: 10px;
 }
