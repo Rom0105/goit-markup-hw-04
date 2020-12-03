@@ -188,32 +188,13 @@ h2, h3 {
 	margin-right: 30px;
 }
 
-/* .text-item::before {
-	display: block;
-	content: "";
-	height: 120px;
-	background-color: var(--grey3);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.icon-antena::before {
-	background-image: url(../svg/antenna.svg);
-}
-.icon-clock::before {
-	background-image: url(../svg/clock.svg);
-}
-.icon-diagram::before {
-	background-image: url(../svg/diagram.svg);
-}
-.icon-astronaut::before {
-	background-image: url(../svg/astronaut.svg);
-} */
 .icon-spraite {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 120px;
 	background-color: var(--grey3);
+	border-radius: 4px;
 }
 
 .text-title {
@@ -438,7 +419,9 @@ h2, h3 {
 .footer-icon {
 	width: 44px;
 	height: 44px;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 	background-repeat: no-repeat;
@@ -448,19 +431,6 @@ h2, h3 {
 .footer-icon:hover,
 .footer-icon:focus {
 	background-color: var(--cyan);
-}
-
-.footer-insta {
-	background-image: url(../svg/instagram.svg);
-}
-.footer-vector {
-	background-image: url(../svg/vector.svg);
-}
-.footer-facebook {
-	background-image: url(../svg/facebook.svg);
-}
-.footer-linke {
-	background-image: url(../svg/linkedin.svg);
 }
 
 .footer-icon:not(:last-child) {

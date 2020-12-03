@@ -293,7 +293,9 @@ h2 {
 .footer-icon {
 	width: 44px;
 	height: 44px;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 	background-repeat: no-repeat;
@@ -303,19 +305,6 @@ h2 {
 .footer-icon:hover,
 .footer-icon:focus {
 	background-color: var(--cyan);
-}
-
-.footer-insta {
-	background-image: url(../svg/instagram.svg);
-}
-.footer-vector {
-	background-image: url(../svg/vector.svg);
-}
-.footer-facebook {
-	background-image: url(../svg/facebook.svg);
-}
-.footer-linke {
-	background-image: url(../svg/linkedin.svg);
 }
 
 .footer-icon:not(:last-child) {
