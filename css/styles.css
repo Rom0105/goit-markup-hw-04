@@ -188,7 +188,7 @@ h2, h3 {
 	margin-right: 30px;
 }
 
-.text-item::before {
+/* .text-item::before {
 	display: block;
 	content: "";
 	height: 120px;
@@ -207,6 +207,13 @@ h2, h3 {
 }
 .icon-astronaut::before {
 	background-image: url(../svg/astronaut.svg);
+} */
+.icon-spraite {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	background-color: var(--grey3);
 }
 
 .text-title {
