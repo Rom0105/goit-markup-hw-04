@@ -4,6 +4,7 @@
 	--grey: #757575;
 	--grey2: rgba(255, 255, 255, 0.6);
 	--grey3: #F5F4FA;
+	--grey4: #AFB1B8;
 	--white: #ffffff;
 	--violet: #2F303A;
 }
@@ -93,10 +94,12 @@ h2 {
 }
 
 .auth-nav .link {
-	display: block;
+	display: flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--grey);
+	fill: var(--grey4);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -105,10 +108,15 @@ h2 {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
 	color: var(--cyan);
+	fill: var(--cyan);
 }
 
 .nav-link {
 	margin-right: 50px;
+}
+
+.nav-svg {
+	margin-right: 10px;
 }
 
 /* Навигация */
@@ -186,6 +194,10 @@ h2 {
 
 .list-link {
 	display: block;
+}
+.list-link:hover,
+.list-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-text {

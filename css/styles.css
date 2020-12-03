@@ -97,10 +97,12 @@ h2, h3 {
 }
 
 .auth-nav .link {
-	display: block;
+	display: flex;
+	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--grey);
+	fill: var(--grey4);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -109,10 +111,15 @@ h2, h3 {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
 	color: var(--cyan);
+	fill: var(--cyan);
 }
 
 .nav-link {
 	margin-right: 50px;
+}
+
+.nav-svg {
+	margin-right: 10px;
 }
 
 /* Герой */
@@ -322,18 +329,33 @@ h2, h3 {
 }
 
 /* Клиенты */
+.client {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .client-list {
 	display: flex;
+	margin-top: 50px;
+}
+
+.client-item:not(:last-child) {
+	margin-right: 30px;
 }
 
 .client-link {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 170px;
 	height: 90px;
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
 	fill: var(--grey4);
 }
 .client-link:hover,
 .client-link:focus {
+	border-color: var(--cyan);
 	fill: var(--cyan);
 }
 
