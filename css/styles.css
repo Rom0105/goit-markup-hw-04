@@ -28,13 +28,6 @@ h2, h3 {
 }
 
 /* Шапка */
-.header {
-	width: 1600px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px solid #ECECEC;
-}
-
 .logo {
 	font-family: Raleway;
 	font-size: 26px;
@@ -133,6 +126,8 @@ h2, h3 {
 	background-repeat: no-repeat;
 	background-position: center;
 	text-align: center;
+	border-top: 1px solid #ECECEC;
+	
 }
 
 .hero-heading {
